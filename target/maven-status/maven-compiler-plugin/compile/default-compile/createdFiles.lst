@@ -1,0 +1,6 @@
+com/example/model/entity/User.class
+com/example/rest/UsersService.class
+com/example/model/dao/UsersDao.class
+com/example/Application.class
+com/example/servlet/Monitor.class
+com/example/model/dao/AbstractDao.class

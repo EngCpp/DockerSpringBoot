@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web:    
+    image: engcpp/demos:project2
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - 80:8080
+      - 8787:8787
+    networks:
+      - webnet
+networks:
+  webnet:
+
+     
+
